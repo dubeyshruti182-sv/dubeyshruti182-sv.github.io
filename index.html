@@ -1,109 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shruti Dubey | Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shruti Dubey | Portfolio</title>
   <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fb;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg,#eef2ff,#fdfbfb);
+      color:#333;
     }
-    header {
-      background: #0b3d91;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      background:white;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
     }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+    nav h1{ color:#4f46e5; }
+    nav ul{ list-style:none; display:flex; gap:20px; }
+    nav a{ text-decoration:none; color:#333; font-weight:500; }
+    nav a:hover{ color:#4f46e5; }
+
+    .hero{
+      height:80vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      flex-direction:column;
+      padding:20px;
     }
-    h2 {
-      color: #0b3d91;
+    .hero h2{
+      font-size:40px;
+      color:#4f46e5;
+      margin-bottom:10px;
     }
-    .skills span {
-      display: inline-block;
-      background: #e3eafc;
-      padding: 8px 12px;
-      margin: 5px;
-      border-radius: 8px;
+    .hero p{
+      font-size:18px;
+      max-width:600px;
+      margin-bottom:20px;
     }
-    .project {
-      background: white;
-      padding: 20px;
-      margin-top: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .btn{
+      background:#4f46e5;
+      color:white;
+      padding:12px 20px;
+      border-radius:8px;
+      text-decoration:none;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0b3d91;
-      color: white;
-      margin-top: 30px;
-    }
-    a {
-      color: #0b3d91;
-      text-decoration: none;
-      font-weight: bold;
+    .btn:hover{ background:#4338ca; }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:white;
+      margin-top:40px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Shruti Dubey</h1>
-  <p>Aspiring Software Developer | BSc Computer Science</p>
-</header>
+<nav>
+  <h1>Shruti</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a BSc Computer Science student passionate about software development,
-    database management, and data science. I enjoy building web projects and
-    learning new technologies.
-  </p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Python</span>
-    <span>Java</span>
-    <span>SQL</span>
-  </div>
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>College Notice Board</h3>
-    <p>Simple notice board using HTML, CSS and JavaScript.</p>
-  </div>
-
-  <div class="project">
-    <h3>Calculator Desktop App</h3>
-    <p>Desktop calculator application (Work in progress).</p>
-  </div>
-</section>
-
-<section>
-  <h2>Education</h2>
-  <p>BSc Computer Science (TYCS)</p>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>GitHub: <a href="#">Add your GitHub link</a></p>
+<section class="hero">
+  <h2>Hi, I'm Shruti Dubey 👋</h2>
+  <p>Aspiring Data science passionate about Web Development, Data Science and Problem Solving.</p>
+  <a href="about.html" class="btn">Explore Portfolio</a>
 </section>
 
 <footer>
